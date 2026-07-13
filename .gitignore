@@ -1,0 +1,11 @@
+data/
+results/*.fastq.gz
+results/*.bam
+results/*.bam.bai
+results/*.vcf.gz
+results/*.vcf.gz.tbi
+results/*fastqc*
+results/*.json
+results/*.html
+results/*.log
+!results/variant_summary.png
