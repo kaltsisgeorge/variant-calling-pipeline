@@ -1,5 +1,7 @@
 # 🧬 Variant Calling Pipeline
 
+![Pipeline Status](https://github.com/kaltsisgeorge/variant-calling-pipeline/actions/workflows/pipeline.yml/badge.svg)
+
 A small, complete NGS variant-calling pipeline: raw reads → QC → trimming → alignment → variant calls → summary plot.
 
 Runs on a 40 kb reference fragment (chr22) with simulated paired-end reads, so it finishes in under a minute and every call can be checked against a known ground truth.
