@@ -2,8 +2,8 @@
 # Compares called variants against the wgsim ground truth and reports accuracy.
 set -euo pipefail
 
-grep "^chr22" data/reference/wgsim_truth.txt | cut -f2 | sort -n > /tmp/truth_pos.txt
-zcat results/sample.filtered.vcf.gz | grep -v "^#" | cut -f2 | sort -n > /tmp/called_pos.txt
+grep "^chr22" data/reference/wgsim_truth.txt | cut -f2 | sort > /tmp/truth_pos.txt
+zcat results/sample.filtered.vcf.gz | grep -v "^#" | cut -f2 | sort > /tmp/called_pos.txt
 
 TRUTH_COUNT=$(wc -l < /tmp/truth_pos.txt)
 CALLED_COUNT=$(wc -l < /tmp/called_pos.txt)
