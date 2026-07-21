@@ -16,6 +16,7 @@ jobs:
       - name: Install tools
         run: |
           sudo apt-get update
+          sudo apt-get install -y --reinstall ca-certificates
           sudo apt-get install -y bwa samtools bcftools fastqc fastp bc
 
       - name: Install Python packages
